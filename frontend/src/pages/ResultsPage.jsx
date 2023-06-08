@@ -7,6 +7,7 @@ export const ResultsPage = () => {
   const { currentUser } = useAuth();
 
   useEffect(() => {
+    console.log('API URL:', import.meta.env.VITE_REACT_APP_API_URL);
     axios
       .get(`${import.meta.env.VITE_REACT_APP_API_URL}/submissions/${currentUser.uid}`)
       .then((response) => {
