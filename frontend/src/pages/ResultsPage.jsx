@@ -7,10 +7,14 @@ export const ResultsPage = () => {
   const { currentUser } = useAuth();
 
   useEffect(() => {
+    const url = `${import.meta.env.VITE_REACT_APP_API_URL}/submissions/${currentUser.uid}`;
     console.log('API URL:', import.meta.env.VITE_REACT_APP_API_URL);
+    console.log('Constructed URL:', url);
+    console.log('currentUser.uid:', currentUser.uid);
     axios
-      .get(`${import.meta.env.VITE_REACT_APP_API_URL}/submissions/${currentUser.uid}`)
+      .get(url)
       .then((response) => {
+        console.log('Response data:', response.data);
         setResults(response.data);
       })
       .catch((error) => {
