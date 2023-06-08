@@ -8,9 +8,6 @@ export const ResultsPage = () => {
 
   useEffect(() => {
     const url = `${import.meta.env.VITE_REACT_APP_API_URL}/submissions/${currentUser.uid}`;
-    console.log('API URL:', import.meta.env.VITE_REACT_APP_API_URL);
-    console.log('Constructed URL:', url);
-    console.log('currentUser.uid:', currentUser.uid);
     axios
       .get(url)
       .then((response) => {
