@@ -1,0 +1,157 @@
+/* Reset margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%; /* ensure body and html cover full height */
+  background-color: #333; /* set your desired background color */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ensure container covers full viewport height */
+}
+
+.signup-modern {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(1.8); 
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+/* Rest of your CSS code */
+
+  
+  /* Modern aesthetic */
+  .modern {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(3);
+  }
+
+
+/* CSS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #333;
+  color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  position: fixed;
+  width: 98%;
+}
+
+.header a {
+  color: #f2f2f2;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header a:hover {
+  color: #777;
+}
+
+.layout {
+  padding-top: 60px; /* match the height of the header */
+}
+
+  
+  /* Button with center alignment and aesthetic styles */
+/* Button with updated styling */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding: 10px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px auto 0;
+}
+
+.start-button{
+  transform: scale(0.5);
+}
+
+.button:hover {
+  background-color: #777;
+}
+
+.text-box {
+  width: 75%;  /* Change this to 75% to cover 75% of the page */
+  padding: 10px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  margin: 0 auto;  /* Add this to center the textarea */
+  display: block;  /* Add this to ensure the textarea is treated as a block element */
+  margin: 20px auto 0;
+  font-size: 0.2em; /* Make the font smaller */
+}
+
+.result-display { 
+  flex-direction: column;
+}
+
+.container-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column; /* Stack the cards vertically */
+}
+
+.modern-results {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #333; /* Dark mode card background */
+  color: #f2f2f2; /* Light text for dark mode */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between cards */
+  width: 80%; /* Width of the cards */
+}
+
+.result-card-results {
+  background-color: #333; /* Dark mode card background */
+  color: #f2f2f2; /* Light text for dark mode */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+  
+  /* Dark mode aesthetic */
+  .dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
